@@ -1,11 +1,94 @@
+<!-- 
+Date :- 18-02-2025
+Question:- create a color Flipper 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Color Flipper - JavaScript Practice</title>
+
+    <!-- no use external css file because in this question will no more apply styles. so use style tag because add some styles not more and more only styles that make webpage   -->
+
+    <!-- more focus on logic -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Ubuntu', sans-serif;
+            background: #f1f1f1;
+        }
+
+        main {
+            padding: 1rem 1.3rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            border: 3px solid black;
+            border-radius: 15px;
+            height: 250px;
+        }
+
+        main h1 {
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        main .color p {
+            font-size: 1.5rem;
+            color: #f1f1f1;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        main .btn {
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        main .btn:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <main>
+        <h1>Color Flipper</h1>
+
+        <div class="color">
+            <p>background color : <span class="color-code">#f1f1f1</span></p>
+        </div>
+
+        <button class="btn">Click Me</button>
+    </main>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>
